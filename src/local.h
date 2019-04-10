@@ -49,6 +49,7 @@ typedef struct listen_ctx {
     int fd;
     int mptcp;
     struct sockaddr **remote_addr;
+    struct remote **remote_peers;
 } listen_ctx_t;
 
 typedef struct server_ctx {

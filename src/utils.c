@@ -244,6 +244,15 @@ ss_malloc(size_t size)
 }
 
 void *
+ss_calloc(size_t num, size_t size)
+{
+    void *tmp = calloc(num, size);
+    if (tmp == NULL)
+        exit(EXIT_FAILURE);
+    return tmp;
+}
+
+void *
 ss_aligned_malloc(size_t size)
 {
     int err;

@@ -69,6 +69,7 @@ typedef struct {
     char *plugin;
     char *plugin_opts;
     int fast_open;
+    int preconnect;
     int reuse_port;
     int nofile;
     char *nameserver;
